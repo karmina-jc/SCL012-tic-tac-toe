@@ -1,4 +1,4 @@
-# -Cool Grils-
+ ![Logo Cool Girls](/assets/logo-900.png)
 
 ## Índice
 
