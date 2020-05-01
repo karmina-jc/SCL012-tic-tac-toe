@@ -7,7 +7,7 @@ import {
   Image,
   ImageBackground,
 } from "react-native";
-import styles from "../styles.js";
+import styles from "./styles.js";
 
 function Home() {
   //estado inicial de la tabla
@@ -92,7 +92,7 @@ function Home() {
     let value = getWinner();
 
     if (value === 1) {
-      Alert.alert("the winnwr is Ada!");
+      Alert.alert("the winner is Ada");
       startState();
     } else if (value === -1) {
       Alert.alert("the winner is Amelia");
@@ -109,14 +109,14 @@ function Home() {
         return (
           <Image
             style={styles.tinyIcon}
-            source={require("../assets/cara-ada.png")}
+            source={require("./assets/cara-ada.png")}
           />
         );
       case -1:
         return (
           <Image
             style={styles.tinyIcon}
-            source={require("../assets/cara-amelia.png")}
+            source={require("./assets/cara-amelia.png")}
           />
         );
       default:
@@ -130,14 +130,14 @@ function Home() {
         return (
           <Image
             style={styles.playerIcon}
-            source={require("../assets/cara-ada.png")}
+            source={require("./assets/cara-ada.png")}
           />
         );
       case -1:
         return (
           <Image
             style={styles.playerIcon}
-            source={require("../assets/cara-amelia.png")}
+            source={require("./assets/cara-amelia.png")}
           />
         );
       default:
@@ -147,13 +147,13 @@ function Home() {
 
   return (
     <ImageBackground
-      source={require("../assets/fondo.png")}
+      source={require("./assets/fondo.png")}
       style={styles.container}
     >
       <View style={styles.logo}>
         <Image
           style={styles.logoHome}
-          source={require("../assets/logo-500.png")}
+          source={require("./assets/logo-500.png")}
         />
       </View>
       <View style={styles.gamebody}>

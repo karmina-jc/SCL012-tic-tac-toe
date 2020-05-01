@@ -27,7 +27,7 @@ export default StyleSheet.create({
     },
     playerText: {
       paddingBottom: 10,
-      fontFamily: 'amaranth-bold',
+      fontFamily: 'Amaranth-Bold',
       fontSize: 30,
       color: '#F9B9B7',
     },
@@ -63,8 +63,14 @@ export default StyleSheet.create({
       backgroundColor: '#0FA3B1',
       borderRadius: 15,
       color: '#fffacd',
-      fontFamily: 'amaranth-regular',
+      fontFamily: 'Amaranth-Regular',
       fontSize: 20,     
     },
+    winnerModal: {
+      flex: 1,
+      alignItems: 'center',
+      backgroundColor: '#f7021a',
+      padding: 100
+    }
   });
   

@@ -1,30 +1,21 @@
-import React, { useState, useEffect} from 'react';
-import { Asset } from 'expo-asset';
-import * as Font from 'expo-font';
-import Home from './Components/Home';
+import React from 'react';
+import { useFonts } from '@use-expo/font';
+import { AppLoading } from 'expo';
+import Home from './Home';
 
 export default function App() {
-  
-  const [fontsLoaded, setFontsLoaded] = useState (false);
 
-  useEffect(() => {
-    if(!fontsLoaded){
-       getFonts()
-    }
-  })
+  const [fontsLoaded] = useFonts({    
+    'Amaranth-Regular' : require('./assets/Fonts/Amaranth-Regular.ttf'),
+    'Amaranth-Italic' : require('./assets/Fonts/Amaranth-Italic.ttf'),
+    'Amaranth-Bold' : require('./assets/Fonts/Amaranth-Bold.ttf'),
+  });
 
-  const getFonts = async () => {
-     await Font.loadAsync({
-      'amaranth-regular' : require('./assets/Fonts/Amaranth-Regular.ttf'),
-      'amaranth-italic' : require('./assets/Fonts/Amaranth-Italic.ttf'),
-      'amaranth-bold' : require('./assets/Fonts/Amaranth-Bold.ttf'),    
-    })
-
-    setFontsLoaded(true)
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  } else {
+    return  (
+      <Home />  
+    )
   }
-
-  return  (
-      <Home />
- 
-  )
 }
