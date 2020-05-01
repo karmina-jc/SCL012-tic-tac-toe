@@ -1,4 +1,4 @@
- ![Logo Cool Girls](/assets/logo-900.png)
+ ![Logo Cool Girls](/assets/logo-500.png)
 
 ## Índice
 
