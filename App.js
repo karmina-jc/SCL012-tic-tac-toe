@@ -1,46 +1,21 @@
-import React, {Component} from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { useFonts } from '@use-expo/font';
+import { AppLoading } from 'expo';
+import Home from './Home';
 
- function App() {
-  return (
-    <View style={styles.container}>
-      <View style={styles.title}>
-        <Text>Aqui va el Titulo del juego</Text>
-      </View>
-      <View style={styles.player}>
-        <Text>Aqui va el turno del jugador</Text>
-      </View>
-      <View style={styles.squareline}>
-        <View style={styles.square}/>
-        <View style={styles.square}/>
-        <View style={styles.square}/>
-      </View>      
-    </View>
-  );
+export default function App() {
+
+  const [fontsLoaded] = useFonts({    
+    'Amaranth-Regular' : require('./assets/Fonts/Amaranth-Regular.ttf'),
+    'Amaranth-Italic' : require('./assets/Fonts/Amaranth-Italic.ttf'),
+    'Amaranth-Bold' : require('./assets/Fonts/Amaranth-Bold.ttf'),
+  });
+
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  } else {
+    return  (
+      <Home />  
+    )
+  }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    flexDirection: "column",
-  },
-  title: {
-    flex: 1,
-    
-  },
-  player: {
-    flex: 1,
-  },
-   squareline: {
-    flexDirection: "row",
-  },
-  square: {
-    borderWidth: 1,
-    width: 80,
-    height: 80,
-  },
- 
-});
-
-export default App;
