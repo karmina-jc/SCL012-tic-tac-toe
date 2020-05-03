@@ -53,7 +53,9 @@ Para las tipografías se optó por la familia Gibson Walsh en el logotipo por su
 
 ## 4. Tecnología empleada
 
-Cool Girls es desarrollada con [React Native](https://reactnative.dev/) y [Expo](https://expo.io/) usando lenguaje JavaScript.
+Cool Girls es desarrollada con [React Native](https://reactnative.dev/) y [Expo](https://expo.io/) usando lenguaje JavaScript. 
+
+Link de app: [Cool Girls](https://expo.io/@karjc/cool-girls)
 
 ## 5. Futuras iteraciones
 
