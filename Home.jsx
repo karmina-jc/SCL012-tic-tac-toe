@@ -20,7 +20,7 @@ function Home() {
   //estao inicial del turno del jugador
   const [player, setPlayer] = useState(1);
 
-  const [winner, setWinner] = useState(null);
+  const [winner, setWinner] = useState("");
 
   const startState = () => {
     setSquareState([
@@ -29,7 +29,22 @@ function Home() {
       [0, 0, 0],
     ]);
 
-    setWinner(null);
+    setWinner(null)
+  };
+
+  const ifTie = () => {
+    let arr = squareState;
+
+    for (let i = 0; i < 3; i++) {
+      if (arr[0][i] === 0) {
+        return 0;
+      } else if (arr[1][i] === 0) {
+        return 0;
+      } else if (arr[2][i] === 0) {
+        return 0;
+      }
+    }
+    return 1;
   };
 
   const getWinner = () => {
@@ -71,7 +86,7 @@ function Home() {
     }
 
     //si no hay ganador...
-    return 0;
+    return null;
   };
 
   const handleClick = (row, col) => {
@@ -90,12 +105,16 @@ function Home() {
 
     //se determinar al ganador...
     let value = getWinner();
+    let tie = ifTie();
 
     if (value === 1) {
       Alert.alert("the winner is Ada");
       startState();
     } else if (value === -1) {
       Alert.alert("the winner is Amelia");
+      startState();
+    } else if (tie === 1) {
+      Alert.alert("It's a Tie");
       startState();
     }
   };

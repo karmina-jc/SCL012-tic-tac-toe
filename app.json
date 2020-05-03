@@ -1,19 +1,19 @@
 {
   "expo": {
-    "name": "tic-tac-toe",
-    "slug": "tic-tac-toe",
+    "name": "Cool Girls",
+    "slug": "cool-girls",
     "platforms": [
       "ios",
       "android",
       "web"
     ],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo-192.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/logo-500.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#fffacd"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -23,6 +23,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "Cool Girls es el clásico juego de 3 en raya, también conocido como gato, michifús o tic tac toe (en inglés) con una estética inspirada en el libro Cuentos de Buenas Noches para Niñas Rebeldes de las autoras Elena Favilli y Francesca Cavallo. En esta primera versión de Cool Girls, puedes jugar con Ada Lovelace la primera programadora de la historia y con Amelia Earhart la primera aviadora en cruzar el océano Atlántico.",
+    "githubUrl": "https://github.com/karmina-jc/SCL012-tic-tac-toe"
   }
 }
