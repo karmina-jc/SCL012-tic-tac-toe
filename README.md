@@ -23,19 +23,19 @@ En esta primera versión de Cool Girls, puedes jugar con [Ada Lovelace](https://
 
 Al abrir la aplicación se muestra la grilla para jugar alternadamente entre Ada y Amelia, en la parte superior de la cuadricula se observa el turno correspondiente a cada jugador.
 
-[Video inicial]
+![Inicio App](/assets/inicio-app.gif)
 
 ### Cuando hay una ganadora
 
 Cuando un jugador logra marcar tres bloques continuos de manera horizontal, vertical o diagonal con su personaje. 
 
-[video ganador]
+![En caso de ganador](/assets/ganador.gif)
 
 ### Cuando no hay ganadora
 
 Cuando ninguno de los dos jugadores logra marcar tres bloques continuos de manera horizontal, vertical o diagonal con su personaje y no quedan más casillas que llenar. 
 
-[Video empate]
+![En caso de empate](/assets/empate.gif)
 
 ## 3. Decisiones de diseño
 
